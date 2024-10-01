@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import AITextbook from './AI-Textbook/AITextbook'
+import "./App.css";
+import AITextbook from "./features/AI-Textbook/AITextbook";
+import LoginPage from "./users/LoginPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <AITextbook />
+      {/* <AITextbook /> */}
+      <LoginPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

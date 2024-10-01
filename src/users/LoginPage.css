@@ -1,0 +1,122 @@
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  min-width: 900px;
+  background: linear-gradient(#01449c, rgb(17, 25, 38));
+  /* background-image: url("../assets/bg3.jpg");
+  background-size: cover;
+  background-position: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* background-color: rgb(17, 25, 38); */
+}
+.login-content {
+  height: 70vh;
+  width: 60vw;
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  min-width: 900px;
+}
+.login-header {
+  display: flex;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+}
+.login-form {
+  padding: 1rem;
+}
+.login-logo img {
+  border-radius: 10px;
+}
+.login-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container {
+  padding: 2rem;
+}
+.carousel-container img {
+  border-radius: 10px;
+}
+.login-title {
+  padding-left: 0.8rem;
+  display: flex;
+  align-items: last baseline;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.login-form-content {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+.login-form-signin {
+  display: flex;
+  padding-left: 2rem;
+}
+.login-signin {
+  color: rgb(71, 70, 70);
+  font-size: 0.9rem;
+}
+.login-signin-link {
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(59, 103, 173);
+  cursor: pointer;
+}
+.login-signin-link:hover {
+  text-decoration: underline;
+}
+.login-form-input {
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+.login-form-button {
+  width: 100%;
+  max-width: 400px;
+  font-weight: 600 !important;
+  background-color: rgb(2, 65, 148) !important;
+  border-color: rgb(2, 65, 148) !important;
+}
+.login-form-button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+}
+.login-page-sso-text {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-page-sso-icons {
+  width: 100%;
+  border: 1px solid rgb(209, 213, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+.login-page-sso-icons:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: ease 0.2s;
+}
+.login-page-sso-icons img {
+  width: 18px;
+  margin-right: 0.5rem;
+}

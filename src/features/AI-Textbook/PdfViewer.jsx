@@ -6,8 +6,8 @@ import Fab from "@mui/material/Fab";
 
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
-import science from "../assets/science.pdf";
-import logo from "../assets/gemini_logo.png";
+import science from "../../assets/science.pdf";
+import logo from "../../assets/gemini_logo.png";
 
 function PdfViewer() {
   const [selectedText, setSelectedText] = useState("");
