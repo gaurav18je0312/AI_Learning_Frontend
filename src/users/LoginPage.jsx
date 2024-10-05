@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./LoginPage.css";
 import logo from "../assets/logo3.jpeg";
-// import { useNavigate } from "react-router-dom";
 import LoginPageImages from "../components/LoginPageImages";
 import LoginForm from "../components/LoginForm";
 import RegisterForm from "../components/RegisterForm";
+import TypingPattern from "../utils/TypePattern";
 
-function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  // const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/dashboard");
-  };
+function LoginPage({ type }) {
   return (
     <div className="login-container">
       <div className="row login-content">
@@ -23,11 +16,11 @@ function LoginPage() {
               <img src={logo} alt="logo" width={"50px"} />
             </div>
             <div className="login-title">
-              Ai.Text<b>book</b>
+              {/* Ai.Text<b>book</b> */}
+              <TypingPattern />
             </div>
           </div>
-          {/* <LoginForm /> */}
-          <RegisterForm />
+          {type === "login" ? <LoginForm /> : <RegisterForm />}
         </div>
         <div className="col-6 login-image">
           <LoginPageImages />

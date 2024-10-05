@@ -3,14 +3,9 @@
   width: 100vw;
   min-width: 900px;
   background: linear-gradient(#01449c, rgb(17, 25, 38));
-  /* background-image: url("../assets/bg3.jpg");
-  background-size: cover;
-  background-position: center; */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* background-color: rgb(17, 25, 38); */
 }
 .login-content {
   height: 70vh;
@@ -48,13 +43,11 @@
   display: flex;
   align-items: last baseline;
   font-size: 1.5rem;
-  font-family: "Courier New", Courier, monospace;
 }
 .login-form-content {
   padding-left: 2rem;
   padding-top: 1rem;
   font-size: 1.5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
 }
 .login-form-signin {
@@ -99,6 +92,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.85rem;
 }
 .login-page-sso-icons {
   width: 100%;

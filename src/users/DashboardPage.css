@@ -1,0 +1,102 @@
+.dashboard-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.dashboard-appbar-toolbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.dashboard-appbar-logo {
+  display: flex;
+  align-items: center;
+}
+.dashboard-appbar img {
+  border-radius: 10px;
+}
+.dashboard-appbar-title {
+  height: 100%;
+  padding-left: 0.8rem;
+  display: flex;
+  align-items: last baseline;
+  font-size: 1.3rem !important;
+  color: black;
+  font-family: "Courier New", Courier, monospace !important;
+}
+.dashboard-page {
+  display: flex;
+  flex-grow: 1;
+  height: calc(100vh - 64px);
+}
+.dashboard-left-panel {
+  background-color: #01449c;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.dashboard-right-panel {
+  flex-grow: 1;
+  background-color: rgb(244, 247, 254);
+}
+.dashboard-left-panel-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 2rem;
+  padding-block: 2rem;
+}
+.dashboard-left-panel-content-item {
+  padding-left: 1.5rem;
+  padding-block: 1rem;
+  margin-block: 1rem;
+  color: rgb(244, 247, 254);
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+}
+.dashboard-left-panel-content-item:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #075ac5;
+  transition: ease 0.2s;
+}
+.dashboard-left-panel-content-item.selected {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(244, 247, 254);
+  transition: ease 0.2s;
+  color: #01449c;
+}
+.dashboard-left-panel-content-item-title {
+  padding-left: 1rem;
+}
+.dashboard-left-panel-content-item-footer {
+  padding-block: 1rem;
+}
+.dashboard-left-panel-content-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-left-panel-content-footer-logout {
+  color: rgb(244, 247, 254);
+  margin-block: 1rem;
+  padding-block: 1rem;
+  padding-left: 1.5rem;
+  border-radius: 20px 0 0 20px;
+  background-color: #075ac5;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.dashboard-left-panel-content-footer-logout:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+}
+.logout-text {
+  padding-left: 1rem;
+}

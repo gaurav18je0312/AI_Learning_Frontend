@@ -1,14 +1,18 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useNavigate } from "react-router-dom";
 
 function RegisterForm() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="login-form-content">Create Account</div>
       <div className="login-form-signin">
         <div className="login-signin">Already have account?</div>
-        <div className="login-signin-link">Sign in</div>
+        <div className="login-signin-link" onClick={() => navigate("/login")}>
+          Sign in
+        </div>
       </div>
       <div className="login-form-input">
         <Form>

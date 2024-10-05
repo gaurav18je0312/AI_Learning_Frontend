@@ -2,14 +2,20 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import google_logo from "../assets/google_logo.png";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="login-form-content">Sign in to your account</div>
       <div className="login-form-signin">
         <div className="login-signin">Not a member?</div>
-        <div className="login-signin-link">Sign up</div>
+        <div
+          className="login-signin-link"
+          onClick={() => navigate("/register")}>
+          Sign up
+        </div>
       </div>
       <div className="login-form-input">
         <Form>
