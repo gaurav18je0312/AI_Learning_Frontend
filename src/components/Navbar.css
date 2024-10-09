@@ -1,0 +1,22 @@
+.dashboard-appbar-toolbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.dashboard-appbar-logo {
+  display: flex;
+  align-items: center;
+}
+.dashboard-appbar img {
+  border-radius: 10px;
+}
+.dashboard-appbar-title {
+  height: 100%;
+  padding-left: 0.8rem;
+  display: flex;
+  align-items: last baseline;
+  font-size: 1.3rem !important;
+  color: black;
+  font-family: "Courier New", Courier, monospace !important;
+}

@@ -1,12 +1,10 @@
 import React from "react";
-import "./LoginPage.css";
-import logo from "../assets/logo3.jpeg";
-import LoginPageImages from "../components/LoginPageImages";
-import LoginForm from "../components/LoginForm";
-import RegisterForm from "../components/RegisterForm";
+import logo from "../assets/logos/logo3.jpeg";
+import AuthRightPanelImages from "../components/AuthRightPanelImages";
 import TypingPattern from "../utils/TypePattern";
+import "./AuthLayout.css";
 
-function LoginPage({ type }) {
+function AuthLayout({ children }) {
   return (
     <div className="login-container">
       <div className="row login-content">
@@ -16,18 +14,17 @@ function LoginPage({ type }) {
               <img src={logo} alt="logo" width={"50px"} />
             </div>
             <div className="login-title">
-              {/* Ai.Text<b>book</b> */}
               <TypingPattern />
             </div>
           </div>
-          {type === "login" ? <LoginForm /> : <RegisterForm />}
+          {children}
         </div>
         <div className="col-6 login-image">
-          <LoginPageImages />
+          <AuthRightPanelImages />
         </div>
       </div>
     </div>
   );
 }
 
-export default LoginPage;
+export default AuthLayout;

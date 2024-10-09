@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import image1 from "../assets/ad1.png";
-import image2 from "../assets/ad2.png";
+import image1 from "../assets/auth/ad1.png";
+import image2 from "../assets/auth/ad2.png";
 
-function LoginPageImages() {
+function AuthRightPanelImages() {
   return (
     <div className="carousel-container">
       <Carousel indicators={false} controls={false}>
@@ -17,4 +17,4 @@ function LoginPageImages() {
   );
 }
 
-export default LoginPageImages;
+export default AuthRightPanelImages;

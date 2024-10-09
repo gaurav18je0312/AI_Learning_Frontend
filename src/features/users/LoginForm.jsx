@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import google_logo from "../assets/google_logo.png";
+import google_logo from "../../assets/logos/google_logo.png";
 import { useNavigate } from "react-router-dom";
 
 function LoginForm() {

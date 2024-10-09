@@ -1,7 +1,13 @@
 import "./App.css";
-import AITextbook from "./features/AI-Textbook/AITextbook";
-import LoginPage from "./users/LoginPage";
-import DashboardPage from "./users/DashboardPage";
+import {
+  LoginScreen,
+  RegisterScreen,
+  TextbookAIScreen,
+  TestAIScreen,
+  LearningAIScreen,
+  AskToAIScreen,
+} from "./screens";
+import { PublicRoutes, UserRoutes } from "./routers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -10,14 +16,53 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/login" element={<LoginPage type="login" />} />
-          <Route path="/register" element={<LoginPage type="register" />} />
-          <Route path="/textbook" element={<DashboardPage page="Textbook" />} />
-          <Route path="/learning" element={<DashboardPage page="Learning" />} />
-          <Route path="/test" element={<DashboardPage page="Test" />} />
+          <Route
+            path="/login"
+            element={
+              <PublicRoutes>
+                <LoginScreen />
+              </PublicRoutes>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <PublicRoutes>
+                <RegisterScreen />
+              </PublicRoutes>
+            }
+          />
+          <Route
+            path="/textbook"
+            element={
+              <UserRoutes>
+                <TextbookAIScreen />
+              </UserRoutes>
+            }
+          />
+          <Route
+            path="/learning"
+            element={
+              <UserRoutes>
+                <LearningAIScreen />
+              </UserRoutes>
+            }
+          />
+          <Route
+            path="/test"
+            element={
+              <UserRoutes>
+                <TestAIScreen />
+              </UserRoutes>
+            }
+          />
           <Route
             path="/ask-questions"
-            element={<DashboardPage page="Ask Questions" />}
+            element={
+              <UserRoutes>
+                <AskToAIScreen />
+              </UserRoutes>
+            }
           />
         </Routes>
       </Router>
