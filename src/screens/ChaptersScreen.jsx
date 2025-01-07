@@ -1,9 +1,7 @@
 import React from "react";
 import DashboardLayout from "../layouts/DashboardLayout";
-import "./TextbookAIScreen.css";
-import TextbookComponent from "../components/TextbookComponent";
 
-function TextbookAIScreen() {
+function ChaptersScreen() {
   return (
     <DashboardLayout type="Textbook">
       <TextbookComponent />
@@ -11,4 +9,4 @@ function TextbookAIScreen() {
   );
 }
 
-export default TextbookAIScreen;
+export default ChaptersScreen;

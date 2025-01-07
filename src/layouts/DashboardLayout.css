@@ -6,7 +6,6 @@
 }
 .dashboard-page {
   display: flex;
-  flex-grow: 1;
   height: calc(100vh - 64px);
 }
 .dashboard-left-panel {
@@ -19,7 +18,7 @@
   padding-bottom: 1rem;
 }
 .dashboard-right-panel {
-  flex-grow: 1;
+  flex: 1;
   background-color: rgb(244, 247, 254);
 }
 .dashboard-left-panel-content {

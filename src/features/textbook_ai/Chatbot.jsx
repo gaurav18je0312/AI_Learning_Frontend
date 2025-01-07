@@ -1,6 +1,6 @@
 import React from "react";
 import "./Chatbot.css";
-import logo from "../../assets/gemini_logo.png";
+import logo from "../../assets/logos/gemini_logo.png";
 import Fab from "@mui/material/Fab";
 import SendIcon from "@mui/icons-material/Send";
 

@@ -7,6 +7,7 @@ import {
   LearningAIScreen,
   AskToAIScreen,
 } from "./screens";
+import AITextbook from "./features/textbook_ai/AITextbook";
 import { PublicRoutes, UserRoutes } from "./routers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -33,7 +34,7 @@ function App() {
             }
           />
           <Route
-            path="/textbook"
+            path="/textbook/*"
             element={
               <UserRoutes>
                 <TextbookAIScreen />
@@ -41,7 +42,7 @@ function App() {
             }
           />
           <Route
-            path="/learning"
+            path="/learning/*"
             element={
               <UserRoutes>
                 <LearningAIScreen />
@@ -49,7 +50,7 @@ function App() {
             }
           />
           <Route
-            path="/test"
+            path="/test/*"
             element={
               <UserRoutes>
                 <TestAIScreen />
@@ -57,10 +58,18 @@ function App() {
             }
           />
           <Route
-            path="/ask-questions"
+            path="/ask-questions/*"
             element={
               <UserRoutes>
                 <AskToAIScreen />
+              </UserRoutes>
+            }
+          />
+          <Route
+            path="/chatbot"
+            element={
+              <UserRoutes>
+                <AITextbook />
               </UserRoutes>
             }
           />

@@ -21,7 +21,8 @@ function Navbar() {
           <div className="dashboard-appbar-logo">
             <img src={logo} alt="logo" width={"40px"} />
             <Typography className="dashboard-appbar-title">
-              <TypingPattern />
+              {/* <TypingPattern /> */}
+              Ai.Text<b>Book</b>
             </Typography>
           </div>
 
